@@ -62,10 +62,6 @@
         "background": "rgba(0,0,0,0)"
       }
     },
-    "17721123692ddca8e9": {
-      "type": "_blocks",
-      "settings": {}
-    },
     "rich_text_8iDkdx": {
       "type": "rich-text",
       "name": "Rich text",
@@ -95,7 +91,6 @@
   },
   "order": [
     "slideshow",
-    "17721123692ddca8e9",
     "rich_text_8iDkdx",
     "shop-the-look"
   ]
