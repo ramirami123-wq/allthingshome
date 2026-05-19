@@ -159,7 +159,7 @@
             "subheading": "10+ STAINLESS STEEL BLADES",
             "title": "One Tool. Endless Possibilities.",
             "content": "<p>From paper-thin cucumber slices to perfectly diced onions, this chopper does it all. Swap blades in seconds to slice, dice, julienne, grate, or shred — no more juggling 5 different kitchen tools or hunting for the right knife. One tool, endless meals, zero fuss.</p>",
-            "button_text": "Shop Now",
+            "button_text": "",
             "button_link": ""
           }
         }
@@ -227,7 +227,7 @@
             "subheading": "CHOP, CATCH, AND COOK",
             "title": "Built-In Container. Zero Mess.",
             "content": "<p>No more scattered onion bits or runaway tomato chunks. The built-in storage container catches every single piece as you chop — so your counter stays clean and your meal prep stays effortless. Just chop, lift, and pour straight into your pan.</p>",
-            "button_text": "Add to Routine",
+            "button_text": "",
             "button_link": ""
           }
         }
@@ -478,8 +478,22 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "1772123363ce666331": {
+    "177920041449df42ce": {
       "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_afwdXL": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_afwdXL"
+      ],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -496,6 +510,6 @@
     "image_with_text_q3zWTB",
     "com_6hdjLn",
     "faq_cbkQ3V",
-    "1772123363ce666331"
+    "177920041449df42ce"
   ]
 }
