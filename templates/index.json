@@ -17,26 +17,8 @@
           "settings": {
             "image": "shopify://shop_images/1761937560_php4q0ip1u7a5i87r6D0xe.png",
             "text_position": "middle_center",
-            "subheading": "10+ BLADES · ONE TOOL · ENDLESS POSSIBILITIES",
-            "title": "10+ BLADES · ONE TOOL · ENDLESS POSSIBILITIES",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "text_position": "middle_center",
             "subheading": "",
-            "title": "",
+            "title": "Smart tools for faster preparation",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -50,8 +32,7 @@
         }
       },
       "block_order": [
-        "image_dDjEhE",
-        "slide-1"
+        "image_dDjEhE"
       ],
       "settings": {
         "section_height": "auto",
@@ -68,7 +49,7 @@
       "settings": {
         "subheading": "",
         "title": "About All Things Home 🏡",
-        "content": "<p>At All Things Home, we believe that the best kitchens are the ones you actually love using. Our mission is to bring you smart, practical tools that make cooking faster, cleaner, and more enjoyable — so you can spend less time on prep and more time enjoying the meal (and the people you're sharing it with).<br/><br/>We focus on thoughtfully designed home essentials that combine durability, function, and everyday convenience. From kitchen gadgets that simplify your routine to tools that make you wonder how you ever lived without them, every product is chosen to make real life easier.<br/><br/>We get it — your kitchen should work for you, not the other way around. That's why we prioritize quality, ease of use, and clever design in everything we offer.<br/><br/>All Things Home — Smarter Tools for Real Kitchens. 🍅</p>",
+        "content": "<p>At All Things Home, we believe the best kitchens are the ones you actually love using. Our mission is to bring you smart, practical tools that make cooking faster, cleaner, and more enjoyable — so you can spend less time on prep and more time enjoying the meal and the people you're sharing it with.</p><p>We curate thoughtfully designed kitchen essentials that combine durability, function, and everyday convenience. From gadgets that simplify your routine to tools that make you wonder how you ever lived without them — every product is chosen to make real life easier.</p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
