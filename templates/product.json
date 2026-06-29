@@ -25,12 +25,6 @@
             "liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:#FFFFF;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#2a3e79;\n      color:white;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#00000;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
           }
         },
-        "liquid_WqHpzt": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"padding: 14px 18px; background-color: #FFF8F0; border-radius: 12px; margin: 12px 0; line-height: 1.8; font-size: 15px; border-left: 4px solid #C97B4F;\">\n  <div>🔪 <strong>10+ Stainless Steel Blades</strong> — slice, dice, julienne, grate & shred</div>\n  <div>⚡ <strong>Chop in Seconds</strong> — perfectly even cuts, every time</div>\n  <div>🥗 <strong>Built-in Container</strong> — catches everything as you chop</div>\n  <div>🛡️ <strong>Safety Lid Design</strong> — keeps fingers far from the blades</div>\n</div>"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -67,7 +61,6 @@
       "block_order": [
         "liquid_e6nkLa",
         "liquid_KKiNTm",
-        "liquid_WqHpzt",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -115,37 +108,6 @@
     },
     "1772112756b71eda01": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_adef03d_DcHCBg": {
-          "type": "ai_gen_block_adef03d",
-          "name": "Free delivery on orders",
-          "settings": {
-            "text_1": "🥗 PERFECT FOR MEAL PREP",
-            "text_2": "🧼 EASY TO CLEAN",
-            "text_3": "📦 BUILT-IN STORAGE CONTAINER",
-            "text_4": "🛒 BUY NOW, SAVE TIME LATER",
-            "show_icon": false,
-            "icon_type": "star",
-            "icon_size": 20,
-            "icon_color": "#0c1b54",
-            "icon_text_spacing": 8,
-            "text_size": 16,
-            "text_weight": "500",
-            "text_transform": "none",
-            "text_color": "#000000",
-            "speed": 5,
-            "pause_on_hover": true,
-            "item_spacing": 60,
-            "padding_vertical": 10,
-            "desktop_width_percent": 100,
-            "background_color": "#f7f7f7"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_adef03d_DcHCBg"
-      ],
       "settings": {}
     },
     "image_with_text_bErjim": {
@@ -249,235 +211,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "com_6hdjLn": {
-      "type": "com",
-      "blocks": {
-        "item_77LR69": {
-          "type": "item",
-          "settings": {
-            "row_heading": "10+ interchangeable blades",
-            "first_column": "Yes",
-            "second_column": "No",
-            "third_column": "",
-            "four_column": ""
-          }
-        },
-        "item_dEPCJH": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Built-in catch container",
-            "first_column": "Yes",
-            "second_column": "No",
-            "third_column": "",
-            "four_column": ""
-          }
-        },
-        "item_Pd6Xd3": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Safe push-down lid",
-            "first_column": "Yes",
-            "second_column": "No",
-            "third_column": "",
-            "four_column": ""
-          }
-        },
-        "item_jEyeCX": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Easy to clean & dishwasher-safe parts",
-            "first_column": "Yes",
-            "second_column": "No",
-            "third_column": "",
-            "four_column": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_77LR69",
-        "item_dEPCJH",
-        "item_Pd6Xd3",
-        "item_jEyeCX"
-      ],
-      "name": "SS - Comparison Table #4",
-      "settings": {
-        "heading": "<h2>US VS OTHER BRANDS</h2>",
-        "heading_custom": false,
-        "heading_font": "assistant_n4",
-        "heading_size": 56,
-        "heading_size_mobile": 32,
-        "heading_height": 130,
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "table_width": 80,
-        "table_columns": 2,
-        "table_align": "center",
-        "table_mt": 44,
-        "table_column_active": "1",
-        "table_column_active_radius": 16,
-        "table_column_active_border_thickness": 2,
-        "table_heading_image_size": 66,
-        "table_heading_image_size_mobile": 40,
-        "first_heading": "US",
-        "second_heading": "OTHERS",
-        "third_heading": "",
-        "four_heading": "",
-        "table_heading_custom": false,
-        "table_heading_font": "assistant_n4",
-        "table_heading_size": 16,
-        "table_heading_size_mobile": 10,
-        "table_heading_height": 100,
-        "table_heading_align": "center",
-        "table_heading_padding_horizontal": 12,
-        "table_heading_padding_horizontal_mobile": 4,
-        "table_heading_padding_vertical": 10,
-        "table_heading_padding_vertical_mobile": 10,
-        "table_row_padding_horizontal": 16,
-        "table_row_padding_horizontal_mobile": 10,
-        "table_row_padding_vertical": 16,
-        "table_row_padding_vertical_mobile": 10,
-        "table_row_border_thickness": 1,
-        "table_row_heading_image_size": 66,
-        "table_row_heading_image_size_mobile": 40,
-        "table_row_heading_width_mobile": 66,
-        "table_row_heading_custom": false,
-        "table_row_heading_font": "assistant_n4",
-        "table_row_heading_size": 22,
-        "table_row_heading_size_mobile": 16,
-        "table_row_heading_height": 130,
-        "table_row_heading_align": "left",
-        "table_row_text_custom": false,
-        "table_row_text_font": "assistant_n4",
-        "table_row_text_size": 20,
-        "table_row_text_size_mobile": 16,
-        "table_row_text_height": 130,
-        "table_row_text_align": "center",
-        "table_row_image_size": 52,
-        "table_row_image_size_mobile": 40,
-        "buttons_mt": 44,
-        "buttons_gap": 16,
-        "button": "",
-        "button_url": "",
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 22,
-        "button_size_mobile": 18,
-        "button_height": 100,
-        "button_padding_vertical": 20,
-        "button_padding_horizontal": 40,
-        "button_radius": 6,
-        "button_border_thickness": 2,
-        "second_button": "",
-        "second_button_url": "",
-        "second_button_custom": false,
-        "second_button_font": "josefin_sans_n4",
-        "second_button_size": 22,
-        "second_button_size_mobile": 18,
-        "second_button_height": 100,
-        "second_button_padding_vertical": 20,
-        "second_button_padding_horizontal": 40,
-        "second_button_radius": 6,
-        "second_button_border_thickness": 2,
-        "table_heading_color": "#2f1718",
-        "table_heading_active_color": "#ffffff",
-        "table_heading_bg_active_color": "#2a3e79",
-        "table_column_active_bg_color": "#ffffff",
-        "table_column_active_border_color": "#2a3e79",
-        "table_row_border_color": "#d3cabc",
-        "table_row_heading_color": "#2f1718",
-        "table_row_text_color": "#2f1718",
-        "table_row_active_text_color": "#2a3e79",
-        "button_color": "#2a3e79",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "",
-        "button_bg_hover_color": "#2a3e79",
-        "button_border_color": "#2a3e79",
-        "button_border_hover_color": "#2a3e79",
-        "second_button_color": "#ffffff",
-        "second_button_hover_color": "#ffffff",
-        "second_button_bg_color": "#2a3e79",
-        "second_button_bg_hover_color": "#2a3e79",
-        "second_button_border_color": "#2a3e79",
-        "second_button_border_hover_color": "#2a3e79",
-        "heading_color": "#2f1718",
-        "background_color": "#fffaed",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": false
-      }
-    },
-    "faq_cbkQ3V": {
-      "type": "faq",
-      "blocks": {
-        "category_y3mKtw": {
-          "type": "category",
-          "disabled": true,
-          "settings": {
-            "title": "Shipping"
-          }
-        },
-        "question_adqrYK": {
-          "type": "question",
-          "settings": {
-            "title": "How many blades does it come with?",
-            "answer": "<p>The chopper includes 10+ interchangeable stainless steel blades, so you can slice, dice, julienne, grate, and shred all kinds of fruits and vegetables. Just snap in the blade you need, push down, and you're done!</p>"
-          }
-        },
-        "question_TDP7NK": {
-          "type": "question",
-          "settings": {
-            "title": "Is it safe to use?",
-            "answer": "<p>Yes! The push-down lid design keeps your hands far from the sharp blades, making it much safer than chopping with a knife. The blades are securely locked in during use, and the entire unit is built with safety in mind.</p>"
-          }
-        },
-        "question_hPGXCN": {
-          "type": "question",
-          "settings": {
-            "title": "Is it dishwasher-safe?",
-            "answer": "<p>The detachable parts are dishwasher-safe for easy cleaning. For the blades, we recommend hand-washing with the included cleaning brush to keep them sharp and rust-free for longer. Everything comes apart in seconds.</p>"
-          }
-        },
-        "question_7Rxwez": {
-          "type": "question",
-          "settings": {
-            "title": "What can I use it for?",
-            "answer": "<p>Pretty much any fruit or vegetable! It works great with onions, tomatoes, cucumbers, carrots, potatoes, garlic, peppers, apples, cheese, and more. Perfect for salads, salsa, stir-fries, meal prep, and everyday cooking.</p>"
-          }
-        },
-        "question_Pzgd7t": {
-          "type": "question",
-          "settings": {
-            "title": "Will it stay sharp over time?",
-            "answer": "<p>Yes — the blades are made from durable, food-grade stainless steel designed to stay sharp through everyday use. With proper care (hand-wash and dry the blades), it'll keep slicing like new for years to come.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "category_y3mKtw",
-        "question_adqrYK",
-        "question_TDP7NK",
-        "question_hPGXCN",
-        "question_7Rxwez",
-        "question_Pzgd7t"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "show_navigation": false,
-        "title": "FAQ",
-        "content": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "177920041449df42ce": {
       "type": "apps",
       "blocks": {
@@ -508,8 +241,6 @@
     "image_with_text_bErjim",
     "blocks_VPBzNU",
     "image_with_text_q3zWTB",
-    "com_6hdjLn",
-    "faq_cbkQ3V",
     "177920041449df42ce"
   ]
 }
